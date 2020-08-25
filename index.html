@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Albert Lai</title>
+    <!--Nunito-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <!--Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!--Open Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" class="logo brand">AL</a>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon"><img src="navbar.svg" alt="Navbar"></label>
+            <ul>
+                <li><a class="link nav-link active" href="index.html">HOME</a></li>
+                <li><a class="link nav-link" href="index.html">ABOUT</a></li>
+                <li><a class="link nav-link" href="index.html">NOW</a></li>
+                <li><a class="link nav-link" href="index.html">PROJECTS</a></li>
+                <li><a class="link nav-link" href="index.html">BLOG</a></li>
+                <li><a class="link nav-link" href="index.html">NEWSLETTER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="position">
+        <div class="text">
+            <h1>Hi, I'm Albert!</h1>
+            <h2>I love solving problems and building things.</h2>
+            <h3>Machine Learning Developer at NEUROFIT VR</h3>
+            <div class="button-holder">
+                <a href="#projects" class="button position-button">My Projects</a>
+                <a href="#contact" class="button position-button">Get in Touch!</a>
+            </div>
+        </div>
+        <div class="img-holder">
+            <img src="Headshot.jpg" alt="Headshot">
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <h2 class="heading">My Projects</h2>
+        <div class="card-holder">
+            <div class="card">
+                <img src="gungeon.png" alt="Gungeon">
+                <h3>Enter the Gungeon</h3>
+                <p>A remake of the classic Enter the Gungeon in Greenfoot (Java Framework)! </p>
+                <div class="button-holder">
+                    <a class="button-outline project-button" href="https://github.com/albertlai431/Gungeon">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="pomo.jpg" alt="Pomodoro">
+                <h3>Focus Monitor</h3>
+                <p> Using the Muse headband paired with the Pomodoro technique to track EEG waves and induce focus!
+                </p>
+                <div class="button-holder">
+                    <a class="button-outline project-button"
+                        href="https://medium.com/swlh/pomodoro-x-bcis-741d0cfb9e5e">View</a></div>
+            </div>
+            <div class="card">
+                <img src="RNN.jpg" alt="Shakespeare">
+                <h3>Shakespearean Text Generator</h3>
+                <p>Writing Like Shakespeare with Recurrent Neural Networks in Pytorch!</p>
+                <div class="button-holder">
+                    <a class="button-outline project-button"
+                        href="https://towardsdatascience.com/writing-like-shakespeare-with-machine-learning-in-pytorch-d77f851d910c">View</a>
+                </div>
+            </div>
+        </div>
+        <a class="link" href="index.html">See More!</a>
+    </section>
+
+    <section id="about">
+
+        <div class="text">
+            <h2 class="heading">About Me!</h2>
+            <p>I'm a grade 11 high school student at Pierre Elliott Trudeau High School. I'm working at <a
+                    href="https://neurofit.ca/">Neurofit VR</a> to improve engagement and personalization through ML. I
+                love everything code, from web dev to making games and competitive programming.</p>
+
+            <p> In my spare time, I enjoy running; one of my biggest achievements was running the Scotiabank Half
+                Marathon last October! I also enjoy talking to interesting people, <a href="index.html">writing
+                    articles</a>, diving into math, and playing the piano.</p>
+        </div>
+        <div class="img-holder">
+            <img src="Goat.jpg" alt="Goat">
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <div class="contact-info">
+            <div class="text">
+                <h3>Contact Info</h3>
+                <ul class="basic-contact-info">
+                    <li><img class="icon smaller" src="location.svg" alt="location">Markam, Ontario, Canada</li>
+                    <li><img class="icon smaller" src="email.svg" alt="email">albertlai631 [at] outlook [dot] com</li>
+                </ul>
+                <ul class="socials">
+                    <li><a href="https://www.linkedin.com/in/albert-lai-b90655171/" target="blank"><img class="icon"
+                                src="linkedin.svg" alt="linkedin"></a></li>
+                    <li><a href="https://medium.com/@albertlai631" target="blank"><img class="icon" src="medium.svg"
+                                alt="medium"></a></li>
+                    <li><a href="https://github.com/albertlai431" target="blank"><img class="icon" src="github.svg"
+                                alt="github"></a></li>
+                </ul>
+            </div>
+
+            <form name="contact" action="https://formspree.io/xjvkkyow" method="POST">
+                <div class="row">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="_replyto" id="email" placeholder="Email" required>
+                </div>
+                <div class="row">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Message..." required></textarea>
+                </div>
+                <div class="button-holder">
+                    <button type="submit" name="submit" class="button form-button">Send
+                        Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
